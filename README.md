@@ -1,5 +1,5 @@
 <h3 align = "center">
-    <img src = "https://steamuserimages-a.akamaihd.net/ugc/1297549742976925024/97F3CBA92B2FEF3652F5A06EC90FB5FF89E5D224/" alt = "Logo" />
+    <img src = "images/logo.png" alt = "Logo" />
 </h3>
 
 ---
@@ -13,7 +13,7 @@ Ward works nice on all popular operating systems, because it uses [OSHI](https:/
 **All features tested on:** `Windows` `Linux`
 
 <p align = "center">
-    <img src = "https://steamuserimages-a.akamaihd.net/ugc/1601547572022736987/1D8D2E576D957DDB9CE34E13D5944AF841E8AAD8/" alt = "Preview Image" />
+    <img src = "images/preview.png" alt = "Preview Image" />
     <h7 align = "center">Preview Image</h7>
 </p>
 
