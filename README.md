@@ -126,10 +126,11 @@ Ward works nice on all popular operating systems, because it uses [OSHI](https:/
 
 <br>
 
-    Build for Docker
+    Build for Docker or Pull 
 
     1. Clone the project
-    2. docker build --tag ward
-    3. docker run --rm -it --name ward -p 4000:4000 -p <application port>:<application port> --privileged ward
-    4. Go to localhost:4000 in web browser, input the same application port
-    5. If you get error after being redirected to application port try hitting refresh
+    2. git clone https://github.com/alcapone1933/Ward.git or docker pull ghcr.io/alcapone1933/ward:latest or docker pull alcapone1933/ward:latest
+    3. docker build --tag ward . 
+    4. docker run --rm -it --name ward -p 4000:4000 -p <application port>:<application port> --privileged ward
+    5. Go to localhost:4000 in web browser, input the same application port
+    6. If you get error after being redirected to application port try hitting refresh
