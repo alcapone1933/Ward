@@ -41,8 +41,6 @@ trigger:
   - master
   event:
   - custom
-  - cron
-  cron:
-  - weekly
+
 depends_on:
   - BUILD-TEST
