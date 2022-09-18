@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  ward:
+    image: alcapone1933/ward:latest
+    container_name: ward
+    privileged: true
+    stdin_open: true
+    tty: true
+    restart: always
+    ports:
+      - 4000:4000
+      # - <application port>:<application port>
+      - 4050:4050
