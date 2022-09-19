@@ -139,3 +139,38 @@ Ward works nice on all popular operating systems, because it uses [OSHI](https:/
     4. docker run --rm -it --name ward -p 4000:4000 -p <application port>:<application port> --privileged ward
     5. Go to localhost:4000 in web browser, input the same application port
     6. If you get error after being redirected to application port try hitting refresh
+
+# Docker CLI
+### demo
+```bash
+docker run --rm -it --name ward -p 4000:4000 -p 4050:4050 --privileged=true alcapone1933/ward:latest
+
+```
+### detached
+```bash
+docker run -d -it \
+--name ward \
+-p 4000:4000 \
+-p <application port>:<application port> \
+--restart always \
+--privileged=true \
+alcapone1933/ward:latest
+
+```
+
+# Docker Compose
+```yaml
+version: "3.9"
+services:
+  ward:
+    image: alcapone1933/ward:latest
+    container_name: ward
+    privileged: true
+    stdin_open: true
+    tty: true
+    restart: always
+    ports:
+      - 4000:4000
+      - <application port>:<application port>
+
+```
