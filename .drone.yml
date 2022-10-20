@@ -4,7 +4,7 @@ type: docker
 name: BUILD-TEST
 steps:
   - name: Build Multi-arch
-    image: thegeeklab/drone-docker-buildx
+    image: alcapone1933/drone:docker-buildx
     privileged: true
     settings:
       platforms: linux/amd64,linux/arm64/v8
@@ -26,7 +26,7 @@ type: docker
 name: BUILD
 steps:
   - name: Build Multi-arch
-    image: thegeeklab/drone-docker-buildx
+    image: alcapone1933/drone:docker-buildx
     privileged: true
     settings:
       username: 
